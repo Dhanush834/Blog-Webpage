@@ -19,6 +19,9 @@ app.use(express.static("public"));
 //Global Variable
 const posts = [{story:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit aliquam etiam erat velit scelerisque in dictum non. Semper eget duis at tellus at urna condimentum mattis pellentesque. Purus viverra accumsan in nisl nisi scelerisque eu. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Sed id semper risus in hendrerit. Eu augue ut lectus arcu bibendum at varius vel pharetra. Sit amet nisl purus in mollis. Ultrices in iaculis nunc sed augue lacus viverra. Vulputate dignissim suspendisse in est ante in nibh.Feugiat in ante metus dictum at tempor commodo ullamcorper a. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Viverra justo nec ultrices dui sapien eget mi proin sed. Eu sem integer vitae justo eget magna fermentum. Magna etiam tempor orci eu lobortis elementum. Nunc vel risus commodo viverra maecenas. Et netus et malesuada fames ac turpis egestas integer. Curabitur vitae nunc sed velit dignissim. At quis risus sed vulputate odio ut. Eget nullam non nisi est sit amet facilisis magna. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Morbi tristique senectus et netus et.",title:"Sample Day"}];
 
+app.get('/check', (req, res) => {
+     res.send("OK");
+}) 
 
 app.get('/', (req, res) => {
   res.render('home', {
